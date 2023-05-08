@@ -1,0 +1,12 @@
+<div class="figma-form">
+    <label for="figmaApiKey">Figma API Key:</label><br>
+    <input type="text" id="figmaApiKey" [(ngModel)]="figmaApiKey" placeholder="Enter Figma API Key" required><br>
+  
+    <label for="figmaLink">Figma Project Link:</label><br>
+    <input type="text" id="figmaLink" [(ngModel)]="figmaLink" placeholder="Enter Figma Link" required><br>
+  
+    <button (click)="submitFigmaLink()">Submit</button>
+</div>
+<div *ngIf="figmaData">
+    <pre>{{ figmaData | json }}</pre>
+</div>
