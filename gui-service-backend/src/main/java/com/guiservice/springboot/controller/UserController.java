@@ -17,7 +17,7 @@ import com.guiservice.springboot.repository.UserRepository;
  */
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("api/")
+@RequestMapping("test/")
 public class UserController {
 
   @Autowired
