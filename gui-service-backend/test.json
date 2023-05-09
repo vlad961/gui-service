@@ -1,0 +1,15 @@
+{
+    "authorName": "Vlad",
+    "books": [
+        {
+            "title": "title1",
+            "inPrint": true,
+            "publishDate": "2023-05-09"
+        },
+        {
+            "title": "title2",
+            "inPrint": false,
+            "publishDate": "2023-01-01"
+        }
+    ]
+}
