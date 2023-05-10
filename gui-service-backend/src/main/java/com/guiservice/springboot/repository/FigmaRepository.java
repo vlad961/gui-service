@@ -7,5 +7,7 @@ import com.guiservice.springboot.model.FigmaProject;
 
 @Repository
 public interface FigmaRepository extends CrudRepository<FigmaProject, Long> {
+
+    // TODO: Prepare Java Objects for Angular
     
 }

@@ -43,6 +43,10 @@ export class FigmaReaderComponent implements OnInit {
       console.log('No Figma data available');
     }
   }
+
+  // TODO: Fill empty angular boxes with data from java objects in backend
+  // Find out how many components are in the frame and create boxes for those components
+  // Get position attributes from java objects
 }
 
 
