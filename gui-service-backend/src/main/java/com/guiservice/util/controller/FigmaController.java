@@ -1,4 +1,4 @@
-package com.guiservice.springboot.controller;
+package com.guiservice.util.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.guiservice.jsonUtil.Json;
+import com.guiservice.util.JsonUtil;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -33,7 +33,7 @@ public class FigmaController {
         // System.out.println("Figma JSON Data: " + figmaJsonData);
 
         try {
-            List<List<JsonNode>> frameComponents = Json.extractFrameComponents(figmaJson);
+            List<List<JsonNode>> frameComponents = JsonUtil.extractFrameComponents(figmaJson);
 
             System.out.println("Number of Frames in JSON: " + frameComponents.size());
 

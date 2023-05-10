@@ -1,4 +1,4 @@
-package com.guiservice.jsonUtil;
+package com.guiservice.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
-public class Json {
+public class JsonUtil {
     
     private static ObjectMapper objectMapper = getDefauObjectMapper();
 

@@ -1,12 +1,12 @@
-package com.guiservice.springboot;
+package com.guiservice.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.guiservice.springboot.model.User;
-import com.guiservice.springboot.repository.UserRepository;
+import com.guiservice.util.model.User;
+import com.guiservice.util.repository.UserRepository;
 
 @SpringBootApplication
 public class GuiServiceBackendApplication implements CommandLineRunner {

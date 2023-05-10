@@ -7,9 +7,9 @@ import java.io.IOException;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.guiservice.jsonUtil.Json;
 import com.guiservice.jsonparsing.pojo.DayPOJO;
 import com.guiservice.jsonparsing.pojo.SimpleTestCaseJsonPOJO;
+import com.guiservice.util.JsonUtil;
 
 public class jsonTest {
 
@@ -26,15 +26,15 @@ public class jsonTest {
     @Test
     void testParse() throws IOException {
 
-        JsonNode node = Json.parse(simpleTestCaseJsonSource);
+        JsonNode node = JsonUtil.parse(simpleTestCaseJsonSource);
         assertEquals(node.get("title").asText(), "GUI Service");
     }
 
     @Test
     void testFromJson() throws IOException {
         
-        JsonNode node = Json.parse(simpleTestCaseJsonSource);
-        SimpleTestCaseJsonPOJO pojo = Json.fromJson(node, SimpleTestCaseJsonPOJO.class);
+        JsonNode node = JsonUtil.parse(simpleTestCaseJsonSource);
+        SimpleTestCaseJsonPOJO pojo = JsonUtil.fromJson(node, SimpleTestCaseJsonPOJO.class);
 
         assertEquals(pojo.getTitle(), "GUI Service");
     }
@@ -42,8 +42,8 @@ public class jsonTest {
     @Test
     void dayTestScenario1() throws IOException {
         
-        JsonNode node = Json.parse(dayScenario1);
-        DayPOJO pojo = Json.fromJson(node, DayPOJO.class);
+        JsonNode node = JsonUtil.parse(dayScenario1);
+        DayPOJO pojo = JsonUtil.fromJson(node, DayPOJO.class);
 
         assertEquals("2023-05-09", pojo.getDate().toString());
     }

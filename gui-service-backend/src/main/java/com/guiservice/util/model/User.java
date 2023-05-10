@@ -1,4 +1,4 @@
-package com.guiservice.springboot.model;
+package com.guiservice.util.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

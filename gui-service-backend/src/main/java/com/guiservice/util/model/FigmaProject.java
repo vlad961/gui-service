@@ -1,4 +1,4 @@
-package com.guiservice.springboot.model;
+package com.guiservice.util.model;
 
 import java.util.List;
 
