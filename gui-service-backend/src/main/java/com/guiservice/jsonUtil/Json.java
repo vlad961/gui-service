@@ -1,4 +1,4 @@
-package com.guiservice.jsonparsing;
+package com.guiservice.jsonUtil;
 
 import java.io.IOException;
 import java.util.ArrayList;
