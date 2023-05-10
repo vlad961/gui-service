@@ -1,4 +1,4 @@
-package com.guiservice.util.controller;
+package com.guiservice.controller;
 
 import java.io.IOException;
 import java.util.List;

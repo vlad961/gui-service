@@ -1,4 +1,4 @@
-package com.guiservice.util.model;
+package com.guiservice.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

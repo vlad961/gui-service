@@ -1,9 +1,9 @@
-package com.guiservice.util.repository;
+package com.guiservice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.guiservice.util.model.User;
+import com.guiservice.model.User;
 
 /**
  * TODO nneuhaus This type ...

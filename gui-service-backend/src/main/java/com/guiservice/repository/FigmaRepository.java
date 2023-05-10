@@ -1,9 +1,9 @@
-package com.guiservice.util.repository;
+package com.guiservice.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.guiservice.util.model.FigmaProject;
+import com.guiservice.model.FigmaProject;
 
 @Repository
 public interface FigmaRepository extends CrudRepository<FigmaProject, Long> {

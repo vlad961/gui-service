@@ -1,4 +1,4 @@
-package com.guiservice.util.model;
+package com.guiservice.model;
 
 import java.util.List;
 

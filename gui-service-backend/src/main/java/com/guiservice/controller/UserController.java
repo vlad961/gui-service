@@ -1,4 +1,4 @@
-package com.guiservice.util.controller;
+package com.guiservice.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.guiservice.util.model.User;
-import com.guiservice.util.repository.UserRepository;
+import com.guiservice.repository.UserRepository;
+import com.guiservice.model.User;
 
 /**
  * TODO nneuhaus This type ...
