@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -16,8 +17,10 @@ public class Json {
     private static ObjectMapper getDefauObjectMapper() {
         ObjectMapper defaultObjectMapper = new ObjectMapper();
         defaultObjectMapper.registerModule(new JavaTimeModule());
+        
         // TODO: Implement configuration possibilites
         // defaultObjectMapper.configure(DeserializationFeature.)
+        defaultObjectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false); // Ignore unknown properties like Jörg sugested
 
 
         return defaultObjectMapper;
