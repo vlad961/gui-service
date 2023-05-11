@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.guiservice.model.FigmaComponent;
+import com.guiservice.service.FigmaComponentProcessor;
 import com.guiservice.util.JsonUtil;
 
 @RestController
@@ -25,14 +27,21 @@ public class FigmaController {
     
     @PostMapping("/process-json")
     public ResponseEntity<String> processFigmaJson(@RequestBody String figmaJson) {
-
-        // TODO: Segment into canvases
-
-        // Save the JSON string to the variable
-        figmaJsonData = figmaJson;
-        // System.out.println("Figma JSON Data: " + figmaJsonData);
-
+        FigmaComponentProcessor processor = new FigmaComponentProcessor();
+        
         try {
+            JsonNode rootJsonNode = JsonUtil.parse(figmaJson);
+            // projectComponent contains the whole structure of the Figma document
+            FigmaComponent projectComponent = processor.processJsonNode(rootJsonNode);
+    
+            // TODO: Pass it to other methods for further processing or directly return it in the response
+    
+            // TODO: Segment into canvases
+    
+            // Save the JSON string to the variable
+            figmaJsonData = figmaJson;
+            // System.out.println("Figma JSON Data: " + figmaJsonData);
+
             List<List<JsonNode>> frameComponents = JsonUtil.extractFrameComponents(figmaJson);
 
             System.out.println("Number of Frames in JSON: " + frameComponents.size());
