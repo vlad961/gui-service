@@ -9,7 +9,7 @@
         <div>
             <div *ngIf="isLabel(component)">
                 <br><br>
-                <label>{{getLabelText(component)}}</label>
+                <label>{{getText(component)}}</label>
             </div>
             <div *ngIf="isTextField(component)">
                 <input type="text" [placeholder]="getText(component)">

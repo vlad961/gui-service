@@ -35,14 +35,7 @@ export class FigmaDisplayService {
   }
 
   isLabel(component : FigmaComponent) : boolean {
-    return component.type === "TEXT";
-  }
-
-  getLabelText(label : FigmaComponent) : string {
-    if (this.isLabel(label)) {
-      return label.name;
-    }
-    return "";
+    return component.type === "COMPONENT" && component.name === "Label";
   }
 
   isHeader(component : FigmaComponent) : boolean {

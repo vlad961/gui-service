@@ -35,10 +35,6 @@ export class FigmaDisplayComponent {
     return this.service.isLabel(component)
   }
 
-  getLabelText(label : FigmaComponent) {
-    return this.service.getLabelText(label);
-  }
-
   isHeader(component : FigmaComponent) {
     return this.service.isHeader(component);
   }
