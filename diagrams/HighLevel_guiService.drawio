@@ -1,9 +1,127 @@
-<mxfile host="app.diagrams.net" modified="2023-05-15T11:37:29.246Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" version="21.2.9" etag="K64z0Ljp0Y-My_8FOtoy" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-15T12:24:00.837Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="Cay95pGmETWLvWMpDagG" version="21.2.9" type="github">
   <diagram name="Page-1" id="qNDCD06Rn4HyFnO84by8">
-    <mxGraphModel>
+    <mxGraphModel dx="1313" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lZgCYmMyYaED3-CPj8l--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--3" target="lZgCYmMyYaED3-CPj8l--5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--3" value="Figma Project &lt;br&gt;(ID / Link)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--4" value="" style="endArrow=none;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="1650" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--5" target="lZgCYmMyYaED3-CPj8l--48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--5" value="Figma &lt;br&gt;REST API" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--6" value="View" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="45" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--8" target="lZgCYmMyYaED3-CPj8l--46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--8" value="Downloadable Angular Project as zip" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--10" value="Components" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--13" value="Java (Jackson)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--15" value="Frontend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="230" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--16" value="Backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="465" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--17" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="360" as="sourcePoint" />
+            <mxPoint x="1650" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--18" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="600" as="sourcePoint" />
+            <mxPoint x="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--28" target="lZgCYmMyYaED3-CPj8l--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--28" value="Jackson&lt;br&gt;(Conversion from json to Java objects)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="lZgCYmMyYaED3-CPj8l--28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--35" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;(Angular App)&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="110" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--46" value="User Github" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1534" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--48" value="MockUp Struktur&lt;br&gt;(json Format)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="lZgCYmMyYaED3-CPj8l--58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--58" target="lZgCYmMyYaED3-CPj8l--59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--58" value="Conversion from java objects to ts objects" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--59" target="lZgCYmMyYaED3-CPj8l--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--59" value="Generate Angular Components" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--63" value="GuiService API" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--64" value="GuiService API" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="460" y="440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--65" target="lZgCYmMyYaED3-CPj8l--64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--65" value="GuiService API" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="460" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lZgCYmMyYaED3-CPj8l--66" target="lZgCYmMyYaED3-CPj8l--63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lZgCYmMyYaED3-CPj8l--66" value="GuiService API" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="440" width="120" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
