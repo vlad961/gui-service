@@ -18,4 +18,12 @@ export class FigmaDisplayComponent {
   getFigmaComponents(): void {
     this.service.getFigmaComponents().subscribe(components => this.figmaComponents = components);
   }
+
+  isButton(component : FigmaComponent) {
+    return this.service.isButton(component);
+  }
+
+  getButtonText(button : FigmaComponent) {
+    return this.service.getButtonText(button);
+  }
 }
