@@ -1,0 +1,8 @@
+<button (click)="getFigmaComponents()">Get Components</button>
+<div *ngIf="figmaComponents">
+    <div *ngFor="let component of figmaComponents">
+        <div>
+            {{component|json}}
+        </div>
+    </div>
+</div>

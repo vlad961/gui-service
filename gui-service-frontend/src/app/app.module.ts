@@ -6,11 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FigmaReaderComponent } from './figma-reader/figma-reader.component';
+import { FigmaDisplayComponent } from './figma-display/figma-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FigmaReaderComponent
+    FigmaReaderComponent,
+    FigmaDisplayComponent
   ],
   imports: [
     BrowserModule,

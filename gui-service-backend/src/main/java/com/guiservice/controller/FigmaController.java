@@ -25,6 +25,7 @@ import com.guiservice.util.JsonUtil;
 public class FigmaController {
 
     private String figmaJsonData;
+    private List<FigmaComponent> figmaComponents;
     
     @PostMapping("/process-json")
     public ResponseEntity<String> processFigmaJson(@RequestBody String figmaJson) {
@@ -42,7 +43,7 @@ public class FigmaController {
             // System.out.println("Figma JSON Data: " + figmaJsonData);
 
             List<List<JsonNode>> frameComponents = JsonUtil.extractFrameComponents(figmaJson);
-            List<FigmaComponent> figmaComponents = new ArrayList<FigmaComponent>();
+            figmaComponents = new ArrayList<FigmaComponent>();
 
             System.out.println("Number of Frames in JSON: " + frameComponents.size());
 
@@ -70,6 +71,11 @@ public class FigmaController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("JSON processing failed.");
         }
         
+    }
+
+    @GetMapping("/figma-components")
+    public ResponseEntity<List<FigmaComponent>> getFigmaComponents() {
+        return ResponseEntity.ok(figmaComponents);
     }
 
 }

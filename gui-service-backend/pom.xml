@@ -75,7 +75,7 @@
 				</executions>
 				<configuration>
 					<jsonLibrary>jackson2</jsonLibrary>
-					<classPatterns>com.guiservice.model.User</classPatterns>
+					<classPatterns>com.guiservice.model.FigmaComponent</classPatterns>
 					<outputKind>module</outputKind>
 				</configuration>
         	</plugin>
