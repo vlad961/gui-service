@@ -1,4 +1,4 @@
-export interface FigmaComponent {
+export interface FigmaComponent { // TODO: label uses characters instead of name -> characters property is missing in FigmaObject
     type: string;
     name: string;
     position: Position;

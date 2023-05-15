@@ -16,7 +16,7 @@ export class FigmaDisplayComponent {
   }
 
   getFigmaComponents(): void {
-    this.service.getFigmaComponents().subscribe(components => this.figmaComponents = components);
+    this.service.getFigmaComponents().subscribe(components => this.figmaComponents = components.reverse());
   }
 
   isButton(component : FigmaComponent) {
@@ -25,5 +25,29 @@ export class FigmaDisplayComponent {
 
   getButtonText(button : FigmaComponent) {
     return this.service.getButtonText(button);
+  }
+
+  isTextField(component : FigmaComponent) {
+    return this.service.isTextField(component);
+  }
+
+  getTextFieldText(textfield : FigmaComponent) {
+    return this.service.getTextFieldText(textfield);
+  }
+
+  isLabel(component : FigmaComponent) {
+    return this.service.isLabel(component)
+  }
+
+  getLabelText(label : FigmaComponent) {
+    return this.service.getLabelText(label);
+  }
+
+  isHeader(component : FigmaComponent) {
+    return this.service.isHeader(component);
+  }
+
+  getHeaderText(header : FigmaComponent) {
+    return this.service.getHeaderText(header);
   }
 }

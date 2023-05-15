@@ -31,4 +31,45 @@ export class FigmaDisplayService {
     }
     return "";
   }
+
+  isTextField(component : FigmaComponent) : boolean {
+    return component.type === "COMPONENT" && component.name === "Text Field";
+  }
+
+  getTextFieldText(textfield : FigmaComponent) : string {
+    if (this.isTextField(textfield)) {
+      for (var child of textfield.children) {
+        if (child.type === "TEXT") {
+          return child.name;
+        }
+      }
+    }
+    return "";
+  }
+
+  isLabel(component : FigmaComponent) : boolean {
+    return component.type === "TEXT";
+  }
+
+  getLabelText(label : FigmaComponent) : string {
+    if (this.isLabel(label)) {
+      return label.name;
+    }
+    return "";
+  }
+
+  isHeader(component : FigmaComponent) : boolean {
+    return component.type === "COMPONENT" && component.name === "Header";
+  }
+
+  getHeaderText(header : FigmaComponent) : string {
+    if (this.isHeader(header)) {
+      for (var child of header.children) {
+        if (child.type === "TEXT") {
+          return child.name;
+        }
+      }
+    }
+    return "";
+  }
 }
