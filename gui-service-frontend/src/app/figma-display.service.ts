@@ -17,34 +17,21 @@ export class FigmaDisplayService {
     return this.http.get<FigmaComponent[]>(this.apiUrl + "/figma-components");
   }
 
+  getText(component : FigmaComponent) : string {
+    for (var child of component.children) {
+      if (child.type === "TEXT") {
+        return child.name;
+      }
+    }
+    return "";
+  }
+ 
   isButton(component : FigmaComponent) : boolean {
     return component.type === "COMPONENT" && component.name === "Button";
   }
 
-  getButtonText(button : FigmaComponent) : string {
-    if (this.isButton(button)) {
-      for (var child of button.children) {
-        if (child.type === "TEXT") {
-          return child.name;
-        }
-      }
-    }
-    return "";
-  }
-
   isTextField(component : FigmaComponent) : boolean {
     return component.type === "COMPONENT" && component.name === "Text Field";
-  }
-
-  getTextFieldText(textfield : FigmaComponent) : string {
-    if (this.isTextField(textfield)) {
-      for (var child of textfield.children) {
-        if (child.type === "TEXT") {
-          return child.name;
-        }
-      }
-    }
-    return "";
   }
 
   isLabel(component : FigmaComponent) : boolean {
@@ -62,14 +49,4 @@ export class FigmaDisplayService {
     return component.type === "COMPONENT" && component.name === "Header";
   }
 
-  getHeaderText(header : FigmaComponent) : string {
-    if (this.isHeader(header)) {
-      for (var child of header.children) {
-        if (child.type === "TEXT") {
-          return child.name;
-        }
-      }
-    }
-    return "";
-  }
 }

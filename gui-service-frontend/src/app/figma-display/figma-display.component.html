@@ -4,7 +4,7 @@
     <div *ngFor="let component of figmaComponents">
         <div *ngIf="isButton(component)">
             <br><br>
-            <button>{{getButtonText(component)}}</button>
+            <button>{{getText(component)}}</button>
         </div>
         <div>
             <div *ngIf="isLabel(component)">
@@ -12,11 +12,11 @@
                 <label>{{getLabelText(component)}}</label>
             </div>
             <div *ngIf="isTextField(component)">
-                <input type="text" [placeholder]="getTextFieldText(component)">
+                <input type="text" [placeholder]="getText(component)">
             </div>
         </div>
         <header *ngIf="isHeader(component)">
-            <h1>{{getHeaderText(component)}}</h1>
+            <h1>{{getText(component)}}</h1>
         </header>
         <!--div>
             {{component|json}}

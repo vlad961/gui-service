@@ -23,16 +23,12 @@ export class FigmaDisplayComponent {
     return this.service.isButton(component);
   }
 
-  getButtonText(button : FigmaComponent) {
-    return this.service.getButtonText(button);
+  getText(component : FigmaComponent) {
+    return this.service.getText(component);
   }
 
   isTextField(component : FigmaComponent) {
     return this.service.isTextField(component);
-  }
-
-  getTextFieldText(textfield : FigmaComponent) {
-    return this.service.getTextFieldText(textfield);
   }
 
   isLabel(component : FigmaComponent) {
@@ -45,9 +41,5 @@ export class FigmaDisplayComponent {
 
   isHeader(component : FigmaComponent) {
     return this.service.isHeader(component);
-  }
-
-  getHeaderText(header : FigmaComponent) {
-    return this.service.getHeaderText(header);
   }
 }
