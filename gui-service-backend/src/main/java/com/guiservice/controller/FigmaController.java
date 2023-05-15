@@ -1,6 +1,7 @@
 package com.guiservice.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -31,9 +32,7 @@ public class FigmaController {
         
         try {
             JsonNode rootJsonNode = JsonUtil.parse(figmaJson);
-            // projectComponent contains the whole structure of the Figma document
-            FigmaComponent projectComponent = processor.processJsonNode(rootJsonNode);
-    
+            // projectComponent contains the whole structure of the Figma document    
             // TODO: Pass it to other methods for further processing or directly return it in the response
     
             // TODO: Segment into canvases
@@ -43,6 +42,7 @@ public class FigmaController {
             // System.out.println("Figma JSON Data: " + figmaJsonData);
 
             List<List<JsonNode>> frameComponents = JsonUtil.extractFrameComponents(figmaJson);
+            List<FigmaComponent> figmaComponents = new ArrayList<FigmaComponent>();
 
             System.out.println("Number of Frames in JSON: " + frameComponents.size());
 
@@ -51,11 +51,19 @@ public class FigmaController {
                 for (JsonNode component : componentsOfFrame) {
                     System.out.println(component);
                     System.out.println("----------------------------------------------------------------------------");
+                    FigmaComponent figmaComponent = processor.processJsonNode(component);
+                    figmaComponents.add(figmaComponent);
                 }
             }
 
-            // TODO: Parse the JSON using Jackson and perform any required processing.
+            System.out.println("Here are the components:");
+            for (FigmaComponent figmaComponent : figmaComponents) {
+                System.out.println(figmaComponent.getName());
+            }
+
+            // TODO: Parse the JSON using Jackson and perform any required processing
             // ...
+
             return ResponseEntity.ok("JSON processing completed.");
         } catch (IOException exc) {
             exc.printStackTrace();
