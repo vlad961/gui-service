@@ -1,0 +1,25 @@
+<button (click)="getFigmaComponents()">Get Components</button>
+<hr>
+<div *ngIf="figmaComponents">
+    <div *ngFor="let component of figmaComponents">
+        <div *ngIf="isButton(component)">
+            <br><br>
+            <button>{{getText(component)}}</button>
+        </div>
+        <div>
+            <div *ngIf="isLabel(component)">
+                <br><br>
+                <label>{{getText(component)}}</label>
+            </div>
+            <div *ngIf="isTextField(component)">
+                <input type="text" [placeholder]="getText(component)">
+            </div>
+        </div>
+        <header *ngIf="isHeader(component)">
+            <h1>{{getText(component)}}</h1>
+        </header>
+        <!--div>
+            {{component|json}}
+        </div!-->
+    </div>
+</div>
