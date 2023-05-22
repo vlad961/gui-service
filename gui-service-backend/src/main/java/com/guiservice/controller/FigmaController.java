@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.guiservice.model.FigmaComponent;
 import com.guiservice.service.FigmaComponentProcessor;
+import com.guiservice.service.AngularComponentGenerator;
 import com.guiservice.util.JsonUtil;
 
 @RestController
@@ -61,10 +62,8 @@ public class FigmaController {
             for (FigmaComponent figmaComponent : figmaComponents) {
                 System.out.println(figmaComponent.getName());
             }
-
             // TODO: Parse the JSON using Jackson and perform any required processing
             // ...
-
             return ResponseEntity.ok("JSON processing completed.");
         } catch (IOException exc) {
             exc.printStackTrace();
@@ -78,4 +77,14 @@ public class FigmaController {
         return ResponseEntity.ok(figmaComponents);
     }
 
+    @GetMapping("/create-angular-component")
+    public ResponseEntity<String> generateTemplates() {
+        try {
+            AngularComponentGenerator.generateTemplates(figmaComponents);
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Error while generating Templates: " + e);
+        }
+       return ResponseEntity.ok("Successfully generated Templates");
+    } 
 }
