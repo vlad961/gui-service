@@ -3,32 +3,39 @@ package com.guiservice.service;
 import java.io.FileWriter;
 import java.io.StringWriter;
 import java.util.List;
+import java.util.Properties;
 
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.guiservice.model.FigmaComponent;
 
 public class AngularComponentGenerator {
+    
+    private final VelocityEngine velocityEngine;
 
-    static public void generateTemplates(List<FigmaComponent> figmaComponents) {
-        VelocityEngine velocityEngine = new VelocityEngine();
-        velocityEngine.init();
+    @Autowired
+    public AngularComponentGenerator() {
+        this.velocityEngine = new VelocityEngine();
+    }
+
+    public void generateTemplates(List<FigmaComponent> figmaComponents) {
+        velocityEngine.init("gui-service/gui-service-backend/src/main/resources/velocity.properties");
         Template template;
         VelocityContext context = new VelocityContext();
         StringWriter writer = new StringWriter();
 
         for (FigmaComponent figmaComponent : figmaComponents) {
             if (isButton(figmaComponent)) {
-                String templateFilePath = "gui-service/gui-service-backend/src/main/java/com/guiservice/model/templates/"
-                        + figmaComponent.getName() + ".vm";
+                String templateFilePath = figmaComponent.getName() + ".vm";
                 template = velocityEngine.getTemplate(templateFilePath);
-                // TODO: Readout the name from figmaComponent.getChildren.charackters!
                 context.put("message", figmaComponent.getName());
+                context.put("blabla", figmaComponent.getType());
                 template.merge(context, writer);
                 String generatedOutput = writer.toString();
-                String outputFile = "gui-service/gui-service-backend/src/main/java/com/guiservice/model/templates/output/"
+                String outputFile = "gui-service/gui-service-backend/src/main/resources/templates/output/"
                         + figmaComponent.getName() + ".html";
                 try {
                     FileWriter fileWriter = new FileWriter(outputFile);

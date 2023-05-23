@@ -27,6 +27,7 @@ public class FigmaController {
 
     private String figmaJsonData;
     private List<FigmaComponent> figmaComponents;
+    private AngularComponentGenerator angularComponentGenerator = new AngularComponentGenerator();
     
     @PostMapping("/process-json")
     public ResponseEntity<String> processFigmaJson(@RequestBody String figmaJson) {
@@ -80,7 +81,7 @@ public class FigmaController {
     @GetMapping("/create-angular-component")
     public ResponseEntity<String> generateTemplates() {
         try {
-            AngularComponentGenerator.generateTemplates(figmaComponents);
+            this.angularComponentGenerator.generateTemplates(figmaComponents);
         } catch (Exception e) {
             // TODO: handle exception
             System.out.println("Error while generating Templates: " + e);
